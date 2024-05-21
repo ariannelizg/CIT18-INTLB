@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title id="title">Personal Portfolio Webpage</title>
+  </head>
+  <body>
+    <div id="header">
+        <nav id="navbar">
+            <a href="#home" class="logo"><span>Arianne Liz</span> Gomez</a>
+                <div class="container-home">
+                    <ul id="sidemenu">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#educ">Education</a></li>
+                        <li><a href="#expe">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#proj">Projects</a></li>
+                        <li><a href="#contact">Contact Information</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+        </nav>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Arianne</span></h1>
+            <h3>a <span>Student Web Developer</span></h3>
+
+            <div class="btn-group">
+                <button onclick="gotoLink(this)" value="Gomez_CurriculumVitae.pdf" class="btn">Download CV</button>
+            </div>
+
+        </div>
+
+        <div class="home-img">
+            <img src="IMG_3280.JPG" alt="Picture">
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>Hello! I'm Arianne, and I am currently pursuing a Bachelor of Science in Information Technology at the University of the Cordilleras, Baguio City. My journey into the world of IT began at a young age, driven by a fascination with computers and technology. Over the years, this curiosity has evolved into a passion for understanding and creating innovative technological solutions.
+                In my academic career, I have developed a strong foundation in various areas of IT, including programming, database management, networking, and cybersecurity. I have hands-on experience with programming languages such as Java, Python, and C++, and I am proficient in using tools like SQL for database management and Cisco Packet Tracer for network simulations. 
+                Beyond my academic interests, I am an avid musician and enjoy playing several instruments, including violin, ukulele and kalimba. Music has always been a significant part of my life, and I find that playing instruments and singing provide a creative outlet and a way to relax and unwind. 
+                I am also a big fan of K-dramas. Watching these shows not only entertains me but also provides a fascinating glimpse into different cultures and storytelling styles. I also love Kpop. Additionally, I am a huge fan of K-pop groups such as Enhypen, Seventeen, BTS, Blackpink, and many others. 
+                The music, choreography, and overall artistry of these groups are incredibly inspiring. Attending concerts, collecting merchandise, and following their activities bring a lot of joy and excitement to my life.</p>
+        </div>
+    </section>
+
+    <section class="educ" id="educ">
+        <div class="educ-img">
+            <img src="uclogo.png" alt="uclogo">
+        </div>
+
+        <div class="educ-content">
+            <h2 class="education">Education</h2>
+            <p>Currently in my third year pursuing a Bachelor of Science in Information Technology Major in Web Technology at the University of the Cordilleras, with an anticipated graduation date in September of this year. Throughout my academic journey, I've engaged with a diverse range of coursework encompassing programming fundamentals, data structures and algorithms, database management systems, network and security, 
+               web development, software engineering, and cybersecurity principles. My educational experience has been enriched by hands-on projects, including the development of a comprehensive web application for specific purposes, database design and management, and the implementation of secure network configurations using tools like Cisco Packet Tracer. We have developed a comprehensive web application 
+               for our capstone project and designed a transport information system for a specific barangay here in Baguio City. </p>
+        </div>
+    </section>
+
+    <section class="expe" id="expe">
+        <div class="expe-content">
+            <h2 class="experience">My <span>Experience</span></h2>
+            <p>
+                As a 3rd-year Bachelor of Science in Information Technology student at the University of the Cordilleras, graduating in September 2024, I have gained valuable experience through activities or project work. Additionally, I worked on a capstone project that involved creating a comprehensive mobile application. My hands-on experience extends to network configuration and cybersecurity measures, utilizing tools like Cisco Packet Tracer. 
+                Currently, I am an intern at Accenture, where we are learning how to use SAP ABAP for programming. They are giving us activities that can help us gain new knowledge and skills in SAP ABAP programming.
+                 
+            </p>
+        </div>
+    </section>    
+
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h2 class="skills-list">My <span>Skills</span></h2>
+            <div class="container-skills">
+                <ul>
+                    <li>Knowledgeable in programming/scripting language: Python, HTML, CSS, Java, SQL </li>
+                    <li>Knowledgeable in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel</li>
+                    <li>Knowledgeable in using Figma</li>
+                    <li>Ability to maintain a high level of confidentiality </li>
+                    <li>Willingness to learn new things </li>
+                    <li>Proven leadership ability and quality as evidenced in various organizations lead and helped; being that as the Supreme Student Government</li>
+                    <li>Flexible individual and team player who functions well in a fast-paced work environment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="proj" id="proj">
+        <h2 class="heading">Projects</h2>
+            <div class="proj-container">
+                <div class="proj-box">
+                    <div class="proj-info">
+                        <a href="https://github.com/ariannelizzz/surveyform" target="_blank" class="project project-tile">
+                        <img class="project-image" src="SurveyForm.png" alt="surveyform-project"/>
+                        <p class="project-title"><span class="code">&lt;</span>Survey Form<span class="code">&#47;&gt;</span></p> 
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <div class="proj-info">
+                        <a href="https://github.com/ariannelizzz/tributepage" target="_blank" class="project project-tile">
+                        <img class="project-image" src="TributePage.png" alt="project"/>
+                        <p class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">&#47;&gt;</span></p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <div class="proj-info">
+                        <a href="https://github.com/ariannelizzz/technicaldocumentationpage" target="_blank" class="project project-tile">
+                        <img class="project-image" src="TechnicalDocumentationPage.png" alt="project"/>
+                        <p class="project-title"><span class="code">&lt;</span>Technical Documentation Page<span class="code">&#47;&gt;</span></p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <div class="proj-info">
+                        <a href="https://github.com/ariannelizzz/productlandingpage" target="_blank" class="project project-tile">
+                        <img class="project-image" src="ProductLandingPage.png" alt="project"/>
+                        <p class="project-title"><span class="code">&lt;</span>Product Landing Page<span class="code">&#47;&gt;</span></p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <div class="contact-content">
+            <button onclick="gotoLink(this)" value="https://www.facebook.com/Ariannelizzz"><i class="fa-brands fa-facebook"></i></button>
+            <button onclick="gotoLink(this)" value="https://www.instagram.com/arianne.lizzz_/"><i class="fa-brands fa-instagram"></i></button>
+            <button onclick="gotoLink(this)" value="https://github.com/ariannelizg"><i class="fa-brands fa-github"></i></button>
+
+    </section>
+
+    <footer>
+        <p> All projects and contact details are for educational purposes only. </p>
+        <p>Copyright 2024 | All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
